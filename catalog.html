@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div>
-          <a class="logo" href="#"><img src="img/logo(154х64).png" width="154" height="64" alt="Gllacy shop"></a>
+      <div class="container clearfix">
+        <div class="logo">
+          <a class="logo-link" href="#"><img src="img/logo(154х64).png" width="154" height="64" alt="Gllacy shop"></a>
         </div>
         <nav class="navigation">
           <ul>
@@ -51,18 +51,18 @@
       </nav>
       <h1>Сливочное мороженое</h1>
       <aside class="aside">
-        <form class="filter" action="" method="get">
-          <fieldset>
+        <form class="filter clearfix" action="" method="get">
+          <fieldset class="sort">
             <legend>Сортировка:</legend>
               <select name="sorting">
                 <option class="select" value="by-popularity">по популярности</option>
               </select>
           </fieldset>
-          <fieldset>
+          <fieldset class="price">
             <legend>Цена: 100 /кг- 500 /кг</legend>
               <input type="range" min="100" max="500" step="5">
           </fieldset>
-          <fieldset>
+          <fieldset class="fat">
             <legend>Жирность:</legend>
               <ul>
                 <li>
@@ -83,7 +83,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="fillers">
             <legend>Наполнители:</legend>
               <ul>
                 <li>
@@ -232,7 +232,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="social">
           <a class="twit" href="#">Твиттер</a>
           <a class="inst" href="#">Инстаграм</a>
