@@ -25,7 +25,7 @@
                   <ul class="sub-menu">
                     <li>
                       <a class="news" href="#">Новинки</a>
-                  </li>
+                    </li>
                     <li>
                       <a href="catalog.html">Сливочное</a>
                     </li>
@@ -49,9 +49,27 @@
               </ul>
             </nav>
             <section class="user">
-                  <a class="search" href="#">Поиск</a>
-              <a class="login" href="#">Вход</a>
-              <a class="basket" href="#">Пусто</a><br>
+              <div class="search-form">
+                <a class="search" href="#">Поиск</a>
+                <div class="search-field">
+                  <input class="search-text" type="text" name="search" placeholder="Что ищем?">
+                </div>
+              </div>
+              <div class="login-form">          
+                <a class="login" href="#">Вход</a>
+                <div class="login-field">
+                  <form>
+                    <input class="login-email" type="text" name="email" placeholder="Электронная почта">
+                    <input class="login-password" type="password" name="password" placeholder="Пароль">
+                    <button class="login-btn btn" type="submit">Войти</button>
+                    <div class="login-links">
+                      <a href="#">Забыли пароль?</a><br>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>  
+                </div>
+              </div>
+                <a class="basket" href="#">Пусто</a><br> 
               <div class="info">
                 <span class="working-ours">С 10 до 20, ежедневно</span><br>
                 <span class="phone-number">8 812 450-25-25</span>

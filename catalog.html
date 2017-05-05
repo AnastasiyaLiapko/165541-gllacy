@@ -44,13 +44,49 @@
           </ul>
         </nav>
         <section class="user">
-          <a class="search" href="#">Поиск</a>
-          <a class="login" href="#">Вход</a>
-          <a class="basket" href="#">2 товара</a><br>
+          <div class="search-form">
+            <a class="search" href="#">Поиск</a>
+            <div class="search-field">
+              <input class="search-text" type="text" name="search" placeholder="Что ищем?">
+            </div>
+          </div>
+          <div class="login-form">          
+            <a class="login" href="#">Вход</a>
+            <div class="login-field">
+              <form>
+                <input class="login-email" type="text" name="email" placeholder="Электронная почта">
+                <input class="login-password" type="password" name="password" placeholder="Пароль">
+                <button class="login-btn btn" type="submit">Войти</button>
+                <div class="login-links">
+                  <a>Забыли пароль?</a><br>
+                  <a>Новая регистрация</a>
+                </div>
+              </form>  
+            </div>
+          </div>
+          <div class="basket-form">     
+            <a class="basket basket-full" href="#">2 товара</a><br>
+            <div class="basket-field">
+              <table class="basket-table">
+                <tr>
+                  <td class="td-1"><span class="td-image-1">Пломбир с апельсиновым джемом</span></td>
+                  <td>1,5 кг х <span class="td-price">200 руб.</span></td>
+                  <td>300 руб.</td>    
+                </tr>
+                <tr>
+                  <td class="td-2"><span class="td-image-2">Клубничный пломбир с присыпкой из белого шоколада</span></td>
+                  <td>1,5 кг х <span class="td-price">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr> 
+              </table>
+              <span class="total">Итого: 750 руб.</span>
+              <a class="basket-btn btn">Оформить заказ</a>  
+            </div>  
+          </div>  
           <div class="info">
             <span class="working-ours">С 10 до 20, ежедневно</span><br>
             <span class="phone-number">8 812 450-25-25</span>
-          </div>
+          </div>  
         </section>  
       </div>
     </header>
@@ -74,7 +110,15 @@
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="sort">
               <legend>Сортировка:</legend>
-              <div class="select">по популярности</div>
+              <div class="sort-field">
+                <div class="select">по популярности</div>
+                <ul class="sort-list">
+                  <li>по популярности</li>
+                  <li>сначала недорогие</li>
+                  <li>сначала дорогие</li>
+                  <li>по жирности</li>
+                </ul>  
+              </div>
             </fieldset>
             <fieldset class="price-field">
               <legend class="price-title">Цена: 100 руб. - 500 руб.</legend>
