@@ -1209,7 +1209,6 @@ body > input[type="radio"] {
 
 .price-field {
   display: inline-block;
-  width: 185px;
   height: 56px;
   font-size: 16px;
   vertical-align: bottom;
@@ -1800,24 +1799,3 @@ body > input[type="radio"] {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-
-
-/*
-.sprite-logo-academy_108x38_ {
-    width: 108px;
-    height: 38px;
-    background-position: -10px -670px;
-}
-
-.sprite-logo_154_64_ {
-    width: 154px;
-    height: 64px;
-    background-position: -10px -728px;
-}
-
-.sprite-red-basket_21x20_ {
-    width: 21px;
-    height: 20px;
-    background-position: -10px -1029px;
-}
-*/
