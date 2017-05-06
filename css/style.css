@@ -127,30 +127,30 @@ body > input[type="radio"] {
   cursor: pointer;
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.btn-1:checked ~ .site-wrapper .slide1,
+.btn-2:checked ~ .site-wrapper .slide2,
+.btn-3:checked ~ .site-wrapper .slide3 {
   display: block;
 }
 
-#btn-1:checked ~ .site-wrapper {
+.btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-1(1045x881).png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+.btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-2(1065x859).png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+.btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-3(1079x854).png");
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.btn-1:checked ~ .site-wrapper label[for="btn-1"],
+.btn-2:checked ~ .site-wrapper label[for="btn-2"],
+.btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
 
