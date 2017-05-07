@@ -1210,6 +1210,10 @@ label[for="btn-3"]:hover {
   display: none;
 }
 
+.sort-list::expand {
+  display: none;
+}
+
 .sort-list option {
   color: #323232;
 }
