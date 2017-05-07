@@ -22,7 +22,7 @@
                   <a class="news" href="#">Новинки</a>
                 </li>
                 <li>
-                  <a class="active" href="catalog.html">Сливочное</a>
+                  <a class="active">Сливочное</a>
                 </li>
                 <li>
                   <a href="#">Щербеты</a>
@@ -58,14 +58,14 @@
                 <input class="login-password" type="password" name="password" placeholder="Пароль">
                 <button class="login-btn btn" type="submit">Войти</button>
                 <div class="login-links">
-                  <a>Забыли пароль?</a><br>
+                  <a>Забыли пароль?</a>
                   <a>Новая регистрация</a>
                 </div>
               </form>  
             </div>
           </div>
           <div class="basket-form">     
-            <a class="basket basket-full" href="#">2 товара</a><br>
+            <a class="basket basket-full" href="#">2 товара</a>
             <div class="basket-field">
               <table class="basket-table">
                 <tr>
@@ -84,7 +84,7 @@
             </div>  
           </div>  
           <div class="info">
-            <span class="working-ours">С 10 до 20, ежедневно</span><br>
+            <span class="working-ours">С 10 до 20, ежедневно</span>
             <span class="phone-number">8 812 450-25-25</span>
           </div>  
         </section>  
@@ -110,15 +110,12 @@
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="sort">
               <legend>Сортировка:</legend>
-              <div class="sort-field">
-                <div class="select">по популярности</div>
-                <ul class="sort-list">
-                  <li>по популярности</li>
-                  <li>сначала недорогие</li>
-                  <li>сначала дорогие</li>
-                  <li>по жирности</li>
-                </ul>  
-              </div>
+                <select class="sort-list" name="sort">
+                  <option value="by-popularity">по популярности</option>
+                  <option value="first-inexpensive">сначала недорогие</option>
+                  <option value="first-expensive">сначала дорогие</option>
+                  <option value="by-fat-content">по жирности</option>
+                </select>  
             </fieldset>
             <fieldset class="price-field">
               <legend class="price-title">Цена: 100 руб. - 500 руб.</legend>
@@ -134,32 +131,20 @@
               <legend>Жирность:</legend>
               <ul class="fat-list">
                 <li>
-                  <label class="fat-radio" for="zero">
-                    <input type="radio" id="zero" name="fat-content" value="0">
-                    <span class="radio-indicator"></span>
-                    0%
-                  </label>
+                  <input type="radio" id="zero" name="fat-content" value="0">
+                  <label class="fat-radio" for="zero">0%</label>
                 </li>
                 <li>
-                  <label class="fat-radio" for="to-10">
-                    <input type="radio" id="to-10" name="fat-content" value="to-10" checked>
-                    <span class="radio-indicator"></span>
-                    до 10%
-                  </label>
+                  <input type="radio" id="to-10" name="fat-content" value="to-10" checked>
+                  <label class="fat-radio" for="to-10">до 10%</label>
                 </li>
                 <li>
-                  <label class="fat-radio" for="to-30">
-                    <input type="radio" id="to-30" name="fat-content" value="to-30">
-                    <span class="radio-indicator"></span>
-                    до 30%
-                  </label>
+                  <input type="radio" id="to-30" name="fat-content" value="to-30">
+                  <label class="fat-radio" for="to-30">до 30%</label>
                 </li>
                 <li>
-                  <label class="fat-radio" for="higher-30">
-                    <input type="radio" id="higher-30" name="fat-content" value="higher-30">
-                    <span class="radio-indicator"></span>
-                    выше 30%
-                  </label>
+                  <input type="radio" id="higher-30" name="fat-content" value="higher-30">
+                  <label class="fat-radio" for="higher-30">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
@@ -167,39 +152,24 @@
               <legend>Наполнители:</legend>
               <ul class="fillers-list">
                 <li>
-                  <label class="fillers-checkbox" for="chocolate">
-                    <input type="checkbox" id="chocolate" name="fillers" value="chocolate" checked>
-                    <span class="checkbox-indicator"></span>
-                    шоколадные
-                  </label>
+                  <input type="checkbox" id="chocolate" name="fillers" value="chocolate" checked>
+                  <label class="fillers-checkbox" for="chocolate">шоколадные</label>
                 </li>
                 <li>
-                  <label class="fillers-checkbox" for="sugar-powders">
-                    <input type="checkbox" id="sugar-powders" name="fillers" value="sugar-powders" checked>
-                    <span class="checkbox-indicator"></span>
-                    сахарные присыпки
-                  </label>
+                  <input type="checkbox" id="sugar-powders" name="fillers" value="sugar-powders" checked>
+                  <label class="fillers-checkbox" for="sugar-powders">сахарные присыпки</label>
                 </li>
                 <li>
-                  <label class="fillers-checkbox" for="fruits">
-                    <input type="checkbox" id="fruits" name="fillers" value="fruits">
-                    <span class="checkbox-indicator"></span>
-                    фрукты
-                  </label>
+                  <input type="checkbox" id="fruits" name="fillers" value="fruits">
+                  <label class="fillers-checkbox" for="fruits">фрукты</label>
                 </li>
                 <li>
-                  <label class="fillers-checkbox" for="syrups">
-                    <input type="checkbox" id="syrups" name="fillers" value="syrups">
-                    <span class="checkbox-indicator"></span>
-                    сиропы
-                  </label>
+                  <input type="checkbox" id="syrups" name="fillers" value="syrups">
+                  <label class="fillers-checkbox" for="syrups">сиропы</label>
                 </li>
                 <li>
-                  <label class="fillers-checkbox" for="jams">
-                    <input type="checkbox" id="jams" name="fillers" value="jams">
-                    <span class="checkbox-indicator"></span>
-                    джемы
-                  </label>
+                  <input type="checkbox" id="jams" name="fillers" value="jams">
+                  <label class="fillers-checkbox" for="jams">джемы</label>
                 </li>
               </ul>
             </fieldset>
@@ -343,16 +313,16 @@
         </section>
         <section class="documents">
           <div class="column-1">
-            <a class="file-1" href="#">Для поставщиков</a><br>
+            <a class="file-1" href="#">Для поставщиков</a>
             <a href="#">О производстве</a>
           </div>
           <div class="column-2">
-            <a href="#">Наши документы</a><br>          
+            <a href="#">Наши документы</a>          
             <a href="#">Экологические стандарты</a>
           </div>
         </section>
         <section class="copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy(108x38).png" width="108" height="38" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy(108x38).png" width="108" height="38" alt="HTML Academy">HTML Academy</a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
         </section>
       </div>
