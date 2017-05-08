@@ -449,16 +449,17 @@ label[for="btn-3"]:hover {
 .login-password {
   margin: 20px 16px;
   padding: 10px 15px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
+  color: #323232;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.52;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(178, 178, 178);
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.52;
 }
 
 .search-text {
@@ -472,6 +473,46 @@ label[for="btn-3"]:hover {
 
 .login-email {
   margin-bottom: 0;
+}
+
+.search-text::-webkit-input-placeholder,
+.login-email::-webkit-input-placeholder,
+.login-password::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.search-text::-moz-placeholder,
+.login-email::-moz-placeholder,
+.login-password::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.search-text:-ms-input-placeholder,
+.login-email:-ms-input-placeholder,
+.login-password:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.search-text::placeholder,
+.login-email::placeholder,
+.login-password::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
 }
 
 .search-text:hover,
@@ -488,6 +529,30 @@ label[for="btn-3"]:hover {
 
 .login-email:hover {
   margin-bottom: -1px;
+}
+
+.search-text:focus::-webkit-input-placeholder,
+.login-email:focus::-webkit-input-placeholder,
+.login-password:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.search-text:focus::-moz-placeholder,
+.login-email:focus::-moz-placeholder,
+.login-password:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.search-text:focus:-ms-input-placeholder,
+.login-email:focus:-ms-input-placeholder,
+.login-password:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.search-text:focus::placeholder,
+.login-email:focus::placeholder,
+.login-password:focus::placeholder {
+  color: transparent;
 }
 
 .login-btn {
@@ -998,15 +1063,47 @@ label[for="btn-3"]:hover {
   margin-left: 26px;
   margin-top: 37px;
   padding: 9px 15px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #000000;
+  color: #323232;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
   opacity: 0.52;
+}
+
+.newsletter input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.newsletter input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.newsletter input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.newsletter input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
 }
 
 .newsletter input:hover {
@@ -1017,6 +1114,22 @@ label[for="btn-3"]:hover {
   border: 2px solid rgb(154, 154, 154);
   border-radius: 5px;
   opacity: 0.52;
+}
+
+.newsletter input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.newsletter input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.newsletter input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.newsletter input:focus::placeholder {
+  color: transparent;
 }
 
 .newsletter .btn {
@@ -1811,7 +1924,7 @@ label[for="btn-3"]:hover {
   padding-top: 10px;
   padding-bottom: 8px;
   padding-left: 13px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -1819,6 +1932,46 @@ label[for="btn-3"]:hover {
   background-color: #ffffff;
   border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+.feedback-form .icon-name::-webkit-input-placeholder,
+.feedback-form .icon-email::-webkit-input-placeholder,
+.feedback-form .icon-text::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.feedback-form .icon-name::-moz-placeholder,
+.feedback-form .icon-email::-moz-placeholder,
+.feedback-form .icon-text::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.feedback-form .icon-name:-ms-input-placeholder,
+.feedback-form .icon-email:-ms-input-placeholder,
+.feedback-form .icon-text:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+}
+
+.feedback-form .icon-name::placeholder,
+.feedback-form .icon-email::placeholder,
+.feedback-form .icon-text::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
 }
 
 .feedback-form .icon-text {
@@ -1837,6 +1990,30 @@ label[for="btn-3"]:hover {
 .icon-email:focus,
 .icon-text:focus {
   box-shadow: 0 0 1px 1px #5b9ddf;
+}
+
+.icon-name:focus::-webkit-input-placeholder,
+.icon-email:focus::-webkit-input-placeholder,
+.icon-text:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.icon-name:focus::-moz-placeholder,
+.icon-email:focus::-moz-placeholder,
+.icon-text:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.icon-name:focus:-ms-input-placeholder,
+.icon-email:focus:-ms-input-placeholder,
+.icon-text:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.icon-name:focus::placeholder,
+.icon-email:focus::placeholder,
+.icon-text:focus::placeholder {
+  color: transparent;
 }
 
 .feedback-form .btn {
