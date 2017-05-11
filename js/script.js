@@ -43,17 +43,3 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: {lat: 59.938790, lng: 30.323071}
-  });
-
-  var image = '../img/map-ice-cream(218x142).png';
-  var marker = new google.maps.Marker({
-    position: {lat: 59.938790, lng: 30.323071},
-    map: map,
-    icon: image
-  });
-}
-

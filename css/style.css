@@ -1143,12 +1143,7 @@ label[for="btn-3"]:hover {
 .address {
   position: relative;
   height: 430px;
-}
-
-.ice-cream {
-  position: absolute;
-  top: 138px;
-  left: 266px;
+  background-image: url("../img/map.png");
 }
 
 .contacts {
@@ -1297,7 +1292,7 @@ label[for="btn-3"]:hover {
   border-width: 5px 5px 0 5px;
   border-color: #ffffff transparent transparent transparent;
   position: absolute;
-  top: 50%;
+  bottom: 30px;
   right: 20px;
   z-index: 1;
 }
@@ -1343,7 +1338,7 @@ label[for="btn-3"]:hover {
    border-width: 5px 5px 0 5px;
    border-color: #323232 transparent transparent transparent;
    position: absolute;
-   top: 50%;
+   bottom: 30px;
    right: 20px;
    z-index: 1;
 }
@@ -1989,7 +1984,7 @@ label[for="btn-3"]:hover {
 .icon-name:focus,
 .icon-email:focus,
 .icon-text:focus {
-  box-shadow: 0 0 1px 1px #5b9ddf;
+  box-shadow: 0 0 1px 1px #2e88e4;
 }
 
 .icon-name:focus::-webkit-input-placeholder,
