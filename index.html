@@ -52,15 +52,18 @@
               <div class="search-form">
                 <a class="search" href="#">Поиск</a>
                 <div class="search-field">
-                  <input class="search-text" type="text" name="search" placeholder="Что ищем?">
+                  <input class="search-text" id="search-text" type="text" name="search" placeholder="Что ищем?" required>
+                  <label class="label-search-text" for="search-text">Что ищем?</label>
                 </div>
               </div>
               <div class="login-form">          
                 <a class="login" href="#">Вход</a>
                 <div class="login-field">
                   <form>
-                    <input class="login-email" type="text" name="email" placeholder="Электронная почта" required>
-                    <input class="login-password" type="password" name="password" placeholder="Пароль" required>
+                    <input class="login-email" id="login-email" type="text" name="email" placeholder="Электронная почта" required>
+                    <label class="label-login-email" for="login-email">Электронная почта</label>
+                    <input class="login-password" id="login-password" type="password" name="password" placeholder="Пароль" required>
+                    <label class="label-login-password" for="login-password">Пароль</label>
                     <button class="login-btn btn" type="submit">Войти</button>
                     <div class="login-links">
                       <a href="#">Забыли пароль?</a>
@@ -158,7 +161,8 @@
             <div class="newsletter">
               <form class="newsletter" action="https://echo.htmlacademy.ru" method="post">
                 <p>Подпишись на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-                <input type="text" name="e-mail" placeholder="Электронная почта" required>
+                <input class="newsletter-email" id="newsletter-text" type="text" name="e-mail" placeholder="Электронная почта" required>
+                <label class="label-newsletter-email" for="newsletter-text">Электронная почта</label>
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -185,7 +189,7 @@
               <a class="twit" href="#">Твиттер</a>
               <a class="inst" href="#">Инстаграм</a>
               <a class="fb" href="#">Фейсбук</a>
-              <a class="vk" href="#">Вконтакте</a> 
+              <a class="vk" href="#">Вконтакте</a>
             </section>
             <section class="documents">
               <div class="column-1">
@@ -207,12 +211,12 @@
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <p>Мы обязательно вам ответим!</p>
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="label-icon-name" for="icon-name">Как вас зовут?</label>
             <input class="icon-name" id="icon-name" type="text" name="name" placeholder="Как вас зовут?" required>
-            <label class="label-icon-email" for="icon-email">Ваша почта для ответа?</label>
+            <label class="label-icon-name" for="icon-name">Как вас зовут?</label>
             <input class="icon-email" id="icon-email" type="text" name="e-mail" placeholder="Ваша почта для ответа?" required>
+            <label class="label-icon-email" for="icon-email">Ваша почта для ответа?</label>
+            <textarea class="icon-text" id="icon-text" rows="5" cols="20" name="text" placeholder="Напишите что-нибудь..." required></textarea>
             <label class="label-icon-text" for="icon-text">Напишите то-нибудь...</label>
-            <textarea class="icon-text" id="icon-text" rows="5" cols="20" name="text" placeholder="Напишите что-нибудь..."></textarea>
             <button class="btn" type="submit">Отправить</button>
           </form>
         </div>

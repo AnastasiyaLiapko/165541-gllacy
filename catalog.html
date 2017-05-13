@@ -47,15 +47,18 @@
           <div class="search-form">
             <a class="search" href="#">Поиск</a>
             <div class="search-field">
-              <input class="search-text" type="text" name="search" placeholder="Что ищем?">
+              <input class="search-text" id="search-text" type="text" name="search" placeholder="Что ищем?" required>
+              <label class="label-search-text" for="search-text">Что ищем?</label>
             </div>
           </div>
           <div class="login-form">          
             <a class="login" href="#">Вход</a>
             <div class="login-field">
               <form>
-                <input class="login-email" type="text" name="email" placeholder="Электронная почта">
-                <input class="login-password" type="password" name="password" placeholder="Пароль">
+                <input class="login-email" id="login-email" type="text" name="email" placeholder="Электронная почта" required>
+                <label class="label-login-email" for="login-email">Электронная почта</label>
+                <input class="login-password" id="login-password" type="password" name="password" placeholder="Пароль" required>
+                <label class="label-login-password" for="login-password">Пароль</label>
                 <button class="login-btn btn" type="submit">Войти</button>
                 <div class="login-links">
                   <a>Забыли пароль?</a>
@@ -309,7 +312,7 @@
           <a class="twit" href="#">Твиттер</a>
           <a class="inst" href="#">Инстаграм</a>
           <a class="fb" href="#">Фейсбук</a>
-          <a class="vk" href="#">Вконтакте</a> 
+          <a class="vk" href="#">Вконтакте</a>
         </section>
         <section class="documents">
           <div class="column-1">

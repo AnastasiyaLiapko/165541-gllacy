@@ -134,6 +134,13 @@ label[for="btn-3"]:hover {
   border: 2px solid #ffffff;
 }
 
+label[for="btn-1"]:active,
+label[for="btn-2"]:active,
+label[for="btn-3"]:active {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
 .btn-1:checked ~ .site-wrapper .slide1,
 .btn-2:checked ~ .site-wrapper .slide2,
 .btn-3:checked ~ .site-wrapper .slide3 {
@@ -447,6 +454,7 @@ label[for="btn-3"]:hover {
 .search-text,
 .login-email,
 .login-password {
+  position: relative;
   margin: 20px 16px;
   padding: 10px 15px;
   font-weight: 700;
@@ -455,10 +463,9 @@ label[for="btn-3"]:hover {
   font-family: "Roboto", "Arial", sans-serif;
   color: #323232;
   background-color: rgb(255, 255, 255);
-  opacity: 0.52;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(178, 178, 178);
+  border-color: rgba(178, 178, 178, 0.52);
   border-radius: 5px;
 }
 
@@ -473,6 +480,45 @@ label[for="btn-3"]:hover {
 
 .login-email {
   margin-bottom: 0;
+}
+
+.label-search-text,
+.label-login-email,
+.label-login-password {
+  position: absolute;
+  left: 32px;
+  display: block;
+  display: none;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: inherit;
+  color: #5b9ddf;
+}
+
+.label-search-text {
+  top: 5px;
+}
+
+.label-login-email {
+  top: 5px;
+}
+
+.label-login-password {
+  top: 71px;
+}
+
+.search-text:focus + .label-search-text,
+.login-email:focus + .label-login-email,
+.login-password:focus + .label-login-password {
+  display: block;
+}
+
+.search-text:valid + .label-search-text,
+.login-email:valid + .label-login-email,
+.login-password:valid + .label-login-password {
+  display: block;
+  color: #999999;
 }
 
 .search-text::-webkit-input-placeholder,
@@ -518,17 +564,13 @@ label[for="btn-3"]:hover {
 .search-text:hover,
 .login-email:hover,
 .login-password:hover {
-  margin: 19px 15px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(154, 154, 154);
-  border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.52;
+  box-shadow: 0 0 1px 1px #9a9a9a;
 }
 
-.login-email:hover {
-  margin-bottom: -1px;
+.search-text:focus,
+.login-email:focus,
+.login-password:focus {
+  box-shadow: 0 0 1px 1px #2e88e4;
 }
 
 .search-text:focus::-webkit-input-placeholder,
@@ -706,7 +748,7 @@ label[for="btn-3"]:hover {
 }
 
 .promotion {
-  margin: 40px 27px 40px 27px;
+  margin: 40px 27px 0 27px;
 }
 
 .promotion b {
@@ -732,6 +774,8 @@ label[for="btn-3"]:hover {
   float: left;
   width: 560px;
   min-height: 229px;
+  margin-right: 26px;
+  margin-bottom: 40px;
   color: #ffffff;
   background: #7c3846 url("../img/jam(560x229).jpg");
   border-radius: 15px;
@@ -739,12 +783,18 @@ label[for="btn-3"]:hover {
 
 .chocolate {
   position: relative;
-  float: right;
+  float: left;
   width: 560px;
   min-height: 229px;
+  margin-right: 26px;
+  margin-bottom: 40px;
   color: #ffffff;
   background: #4d3428 url("../img/choco.jpg");
   border-radius: 15px;
+}
+
+.promotion:nth-child(1n+1) {
+  margin-right: 0;
 }
 
 .btn-jam,
@@ -785,7 +835,7 @@ label[for="btn-3"]:hover {
 }
 
 .bestseller {
-  margin: 0 27px 40px 27px;
+  margin: 0 27px 0 27px;
 }
 
 .bestseller-item {
@@ -794,9 +844,10 @@ label[for="btn-3"]:hover {
   width: 267px;
   height: 322px;
   margin-right: 26px;
+  margin-bottom: 40px;
 }
 
-.bestseller-item:last-child {
+.bestseller-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1038,6 +1089,7 @@ label[for="btn-3"]:hover {
 }
 
 .newsletter {
+  position: relative;
   float: right;
   width: 560px;
   min-height: 220px;
@@ -1058,7 +1110,8 @@ label[for="btn-3"]:hover {
   color: #323232;
 }
 
-.newsletter input {
+.newsletter-email {
+  position: relative;
   width: 335px;
   margin-left: 26px;
   margin-top: 37px;
@@ -1069,12 +1122,24 @@ label[for="btn-3"]:hover {
   font-family: "Roboto", "Arial", sans-serif;
   color: #323232;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(178, 178, 178);
+  border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
-  opacity: 0.52;
 }
 
-.newsletter input::-webkit-input-placeholder {
+.label-newsletter-email {
+  position: absolute;
+  bottom: 87px;
+  left: 43px;
+  display: block;
+  display: none;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #5b9ddf; 
+}
+
+.newsletter-email::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1082,7 +1147,7 @@ label[for="btn-3"]:hover {
   color: #999999;
 }
 
-.newsletter input::-moz-placeholder {
+.newsletter-email::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1090,7 +1155,7 @@ label[for="btn-3"]:hover {
   color: #999999;
 }
 
-.newsletter input:-ms-input-placeholder {
+.newsletter-email:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1098,7 +1163,7 @@ label[for="btn-3"]:hover {
   color: #999999;
 }
 
-.newsletter input::placeholder {
+.newsletter-email::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1106,30 +1171,37 @@ label[for="btn-3"]:hover {
   color: #999999;
 }
 
-.newsletter input:hover {
-  margin-left: 25px;
-  margin-top: 36px;
-  margin-right: -1px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(154, 154, 154);
-  border-radius: 5px;
-  opacity: 0.52;
+.newsletter-email:hover {
+  box-shadow: 0 0 1px 1px #9a9a9a;
 }
 
-.newsletter input:focus::-webkit-input-placeholder {
+.newsletter-email:focus {
+  box-shadow: 0 0 1px 1px #2e88e4;
+}
+
+.newsletter-email:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.newsletter input:focus::-moz-placeholder {
+.newsletter-email:focus::-moz-placeholder {
   color: transparent;
 }
 
-.newsletter input:focus:-ms-input-placeholder {
+.newsletter-email:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.newsletter input:focus::placeholder {
+.newsletter-email:focus::placeholder {
   color: transparent;
+}
+
+.newsletter-email:focus + .label-newsletter-email {
+  display: block;
+}
+
+.newsletter-email:valid + .label-newsletter-email {
+  display: block;
+  color: #999999;
 }
 
 .newsletter .btn {
@@ -1674,15 +1746,21 @@ label[for="btn-3"]:hover {
   position: relative;
   display: inline-block;
   margin-top: 35px;
+  margin-right: 45px;
+  padding-top: 15px;
   font-size: 0;
   vertical-align: top;
+}
+
+.social:nth-child(4n) {
+  margin-right: 0;
 }
 
 .twit::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 1px;
+  left: 0;
   width: 32px;
   height: 32px; 
   background: url("../img/sprite.png") no-repeat;
@@ -1696,7 +1774,7 @@ label[for="btn-3"]:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 47px;
+  left: 0;
   width: 32px;
   height: 32px;
   background: url("../img/sprite.png") no-repeat;
@@ -1710,7 +1788,7 @@ label[for="btn-3"]:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 92px;
+  left: 0;
   width: 32px;
   height: 32px;
   background: url("../img/sprite.png") no-repeat;
@@ -1724,7 +1802,7 @@ label[for="btn-3"]:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 137px;
+  left: 0;
   width: 32px;
   height: 32px;
   background: url("../img/sprite.png") no-repeat;
@@ -1898,6 +1976,7 @@ label[for="btn-3"]:hover {
 }
 
 .modal-content label {
+  position: absolute;
   display: block;
   display: none;
   margin-bottom: -20px;
@@ -1907,6 +1986,31 @@ label[for="btn-3"]:hover {
   line-height: 13px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #5b9ddf;
+}
+
+.label-icon-name {
+  top: 45px;
+}
+
+.label-icon-email {
+  top: 109px;
+}
+
+.label-icon-text {
+  top: 173px;
+}
+
+.icon-name:focus + .label-icon-name,
+.icon-email:focus + .label-icon-email,
+.icon-text:focus + .label-icon-text {
+  display: block;
+}
+
+.icon-name:valid + .label-icon-name,
+.icon-email:valid + .label-icon-email,
+.icon-text:valid + .label-icon-text {
+  display: block;
+  color: #999999;
 }
 
 .feedback-form .icon-name,
@@ -1978,7 +2082,7 @@ label[for="btn-3"]:hover {
 .icon-name:hover,
 .icon-email:hover,
 .icon-text:hover {
-  box-shadow: 0 0 1px 1px lightgrey; 
+  box-shadow: 0 0 1px 1px #9a9a9a; 
 }
 
 .icon-name:focus,
